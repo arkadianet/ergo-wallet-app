@@ -476,7 +476,7 @@ object ErgoFacade {
     private fun getColdErgoClient() = ColdErgoClient(
         getErgoNetworkType(),
         Parameters.ColdClientMaxBlockCost,
-        Parameters.ColdClientBlockVersion
+        4 // Sigma 6 / ErgoTree v3 requires block version 4
     )
 
     /**
